@@ -24,7 +24,7 @@ This project started out with a lot of group pairing while we all got on the sam
 
 In our store a user can now register, sign-in, add items to their cart, edit the quantity of those items, and checkout. The user can also edit basic profile information after signing up.
 An Admin user has even more privileges. An Admin is able to edit orders that have been placed to change their status, and to create new items. Admins are also able to retire items, just in case we sell out of our Four-Leaf Clovers.
-The project is pushed to Heroku here: http://polar-reef-22111.herokuapp.com/
+The project is pushed to Heroku here: https://lucky-charms-store.herokuapp.com/
 
 #### Extra-Bits
 
