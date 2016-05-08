@@ -37,3 +37,43 @@ For easier implementation of some pieces, and for help with some extensions (lis
 ![alt text](https://lh3.googleusercontent.com/-4Qran4LP5Fo/VuGzaLLKP_I/AAAAAAAAC80/RziwROwibQ4/s912-Ic42/Screen%252520Shot%2525202016-03-10%252520at%2525209.46.29%252520AM.jpg "What's the weather like?")
 
 Beyond the basic functionality of an e-commerce store, we challenged ourselves to finish a few extra pieces. Users are able to check the weather in their city. If rain is in the forecast, you'll have a special opportunity to get that pot of gold at the end of the rainbow. The forecast page also has a little bit of jQuery magic to make the dynamic icons grow and shrink as you hover over them. Also, when users register an account at Lucky Charms, they can provide an email address. If they do, they'll get an e-mail after an order is places to confirm a few details.
+
+## So you want your own store?
+
+#### Installation
+To start your own store, begin with cloning down this repository:
+```
+git clone https://github.com/erinnachen/lucky-charms
+```
+and then running the commands
+
+```
+bundle install
+rake db:{create,migrate,seed}
+```
+
+for dependencies and database creation.
+
+The application is does require API keys for full functionality. The [figaro gem](https://github.com/laserlemon/figaro) is included in our Gemfile to facilitate the export of environment variables. To generate `config/application.yml`, run
+
+```
+figaro install
+```
+
+The following environment variables are expected:
+
+Image hosting via S3:
+* S3_BUCKET_NAME
+* AWS_ACCESS_KEY_ID
+* AWS_SECRET_ACCESS_KEY
+* AWS_REGION
+
+[OpenWeather API](http://openweathermap.org/api):
+* OPEN_WEATHER_KEY
+
+Email using SendGrid:
+* SENDGRID_USERNAME
+* SENDGRID_PASSWORD
+
+#### Test Suite
+The test suite is written in RSpec and can be run with `rspec`. There may be failures due to missing keys as described above.
