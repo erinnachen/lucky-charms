@@ -1,4 +1,7 @@
 # Lucky Charms!
+[![Build Status](https://circleci.com/gh/erinnachen/lucky-charms/tree/master.svg?style=shield&circle-token=1432d52ff477b771a546bcc5441ad2914b4fbea4)](https://circleci.com/gh/erinnachen/lucky-charms)
+[![Code Climate](https://codeclimate.com/github/erinnachen/lucky-charms/badges/gpa.svg)](https://codeclimate.com/github/erinnachen/lucky-charms)
+
 ![alt text](https://lh3.googleusercontent.com/-zAfzSjPn97Y/VuGzalr5HYI/AAAAAAAAC84/Euuhylif5zw/s638-Ic42/Screen%252520Shot%2525202016-03-10%252520at%25252010.16.16%252520AM.png "Lucky Charms")
 
 Merge conflicts got you down? Stack level too deep? Rainbow wheel of doom? Sounds like you're on a run of bad luck. Fortunately, at Lucky Charms, we can help!
